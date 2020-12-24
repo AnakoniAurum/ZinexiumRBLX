@@ -45,6 +45,10 @@ p {
 width: 150px;
 }
 
+body {
+  font-family: "", sans-serif;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -83,6 +87,9 @@ width: 150px;
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+
 </style>
   
 
