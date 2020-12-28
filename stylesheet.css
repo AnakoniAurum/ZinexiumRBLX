@@ -2,7 +2,12 @@ body {
   
 
 <style>
- 
+
+.container {
+    width:"100px";
+    margin:auto;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
