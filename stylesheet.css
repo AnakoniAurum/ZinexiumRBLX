@@ -1,11 +1,7 @@
-body {
-  
-
-<style>
-
-.container {
-    width:"100px";
-    margin:auto;
+.wrapper {
+  width:"700px";
+  padding-left: 70px;
+  margin: auto;
 }
 
 body {
