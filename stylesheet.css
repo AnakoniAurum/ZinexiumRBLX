@@ -1,32 +1,46 @@
-.wrapper {
-  width:"400px";
-  padding-left: 70px;
-  margin: auto;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-
+html {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
-
-html {
-  box-sizing: border-box;
+p {
+  font-size: 34px;
+}
+ul {
+  width: 150px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.wrapper {
+  position: relative;
+  /* height: 200px; */
+  width: 80%;
+  margin: auto;
+  overflow: auto;
 }
-
+.main {
+  margin: auto;
+}
 .column {
   float: left;
   width: 33.3%;
+  margin: 4em;
   margin-bottom: 16px;
   padding: 0 8px;
 }
 
 .card {
+  width: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+} 
+.card p {
+  font-size: 150%; /* changes font size inside of cards*/
 }
 
 .about-section {
@@ -39,13 +53,12 @@ html {
 .container {
   padding: 0 16px;
 }
-
-.container::after, .row::after {
-  content: "";
+.container::after,
+.row::after {
+  content: '';
   clear: both;
   display: table;
 }
-
 .title {
   color: grey;
 }
@@ -74,51 +87,44 @@ html {
 }
 
 .rainbow {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 32px;
-    font-family: monospace;
-    letter-spacing: 5px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
 }
 .rainbow_text_animated {
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
+  background: linear-gradient(
+    to right,
+    #6666ff,
+    #0099ff,
+    #00ff00,
+    #ff3399,
+    #6666ff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
 }
 
 @keyframes rainbow_animation {
-    0%,100% {
-        background-position: 0 0;
-    }
+  0%,
+  100% {
+    background-position: 0 0;
+  }
 
-    50% {
-        background-position: 100% 0;
-    }
-}
-
-p {
-  font-size: 34px;
+  50% {
+    background-position: 100% 0;
+  }
 }
 
 #rcorners1 {
   border-radius: 25px;
-  background: #D3D3D3;
+  background: #d3d3d3;
   padding: 20px;
   width: 300px;
   height: 345px;
 }
 
-  ul {
-width: 150px;
-}
-
-body {
-  font-family: "", sans-serif;
-}
-
-
-</style>
-}
