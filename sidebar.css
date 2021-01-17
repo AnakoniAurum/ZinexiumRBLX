@@ -1,3 +1,7 @@
+:root {
+  --sidebar-width: 4.5em;
+}
+
 .sidebar {
 	background-color: #333;
 	position: fixed;
