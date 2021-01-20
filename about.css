@@ -1,0 +1,106 @@
+/* =Structure
+---------------------------*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ddd;
+  padding: 40px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.site {
+  background-color: white;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* =Elements
+---------------------------*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 26px;
+}
+p {
+  margin-bottom: 26px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* =Header
+---------------------------*/
+.site-header {
+  padding: 40px;
+  text-align: center;
+}
+.site-title {
+  margin: 0;
+}
+@media (min-width: 800px) {
+  .site-title {
+    float: left;
+  }
+}
+
+/* =Navigation
+---------------------------*/
+.site-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-navigation li {
+  display: inline-block;
+}
+.site-navigation a {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  padding: 0 20px;
+}
+.site-navigation a:hover {
+  color: #4cacbe;
+}
+
+@media (min-width: 800px) {
+  .site-navigation {
+    float: right;
+  }
+  .site-navigation a {
+    padding: 0 0 0 20px;
+  } 
+}
+
+/* =Content
+---------------------------*/
+.content-wrapper {
+  padding: 40px;
+}
+
+/* =Footer
+---------------------------*/
+.site-footer {
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+  padding: 40px;
+}
+
+@media (min-width: 800px) {
+  .site-footer {
+    clear: both;
+  }
+  .site-footer .column {
+    width: 32%;
+    float: left;
+    padding-right: 2%;
+    margin-bottom: 2%;
+  }
+  .site-footer .column.last {
+    padding-right: 0;
+  }
+}
