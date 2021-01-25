@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -50,11 +49,13 @@
       .active {
         background-color: #4caf50;
       }
-      
+      #about {
+        text-align:center;
+        margin: 0;
+      }
     </style>
   </head>
   <body>
-    <h1 style="text-align:center">About</h1>
     <aside class="sidebar">
       <nav>
         <ul class="sidebar__nav">
@@ -95,14 +96,19 @@
             </a>
           </li>
           <li>
-   <a href="https://discord.gg/QTkncurCkm" target="_blank" class="sidebar__nav__link">
-     <i class="mdi mdi-discord"></i>
-     <span class="sidebar__nav__text">Discord</span>
-   </a>
-</li>
+            <a
+              href="https://discord.gg/QTkncurCkm"
+              target="_blank"
+              class="sidebar__nav__link"
+            >
+              <i class="mdi mdi-discord"></i>
+              <span class="sidebar__nav__text">Discord</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </aside>
+    <h1 id="about">About</h1>
     <main class="main"></main>
     <div id="tsparticles"></div>
     <script src="tsparticles.min.js"></script>
