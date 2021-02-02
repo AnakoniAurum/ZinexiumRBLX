@@ -148,3 +148,9 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+hr {
+    width:45%;
+    height:199%;
+    margin:0 auto;
+}
