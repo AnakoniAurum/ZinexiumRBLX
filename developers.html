@@ -1,26 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="sidebar.css" type="text/css" />
-    <link rel="stylesheet" href="sidebarStyle.css" type="text/css" />
-    <meta name="description" content="Developers of Zinexium." />
-    	<title>Zinexium</title>
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<html><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="app.js" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="sidebar.css" type="text/css">
+    <meta property="og:image" content="https://i.vgy.me/xUJSfX.png">
+    <link rel="shortcut icon" href="https://i.vgy.me/xUJSfX.png">
+    <link rel="stylesheet" href="sidebarStyle.css" type="text/css">
+    <meta name="description" content="Zinexium Download.">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    
+    <title>Zinexium</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      .active {
+        background-color: #4caf50;
+      }
+    </style>
   </head>
   <body>
     <aside class="sidebar">
@@ -57,22 +75,21 @@
             </a>
           </li>
           <li>
-						<a href="logs.html" class="sidebar__nav__link">
-							<i class="mdi mdi-message-alert"></i>
-							<span class="sidebar__nav__text">Logs</span>
-		  </a>
-					</li>
-		   <li>
+            <a href="logs.html" class="sidebar__nav__link">
+              <i class="mdi mdi-message-alert"></i>
+              <span class="sidebar__nav__text">Logs</span>
+            </a>
+          </li>
+             <li>
    <a href="https://discord.gg/QTkncurCkm" target="_blank" class="sidebar__nav__link">
      <i class="mdi mdi-discord"></i>
      <span class="sidebar__nav__text">Discord</span>
    </a>
 </li>
-          
         </ul>
       </nav>
     </aside>
-    <div class="about-section">
+      <div class="about-section">
       <h1>Developers</h1>
     </div>
     <div class="wrapper">
@@ -81,19 +98,17 @@
         <div class="row">
           <div class="column">
             <div class="card">
-              <img src="Morgan.jpeg" alt="Morgan" style="width: 100%" />
+              <img src="Morgan.jpeg" alt="Morgan" style="width: 100%">
               <div class="container">
                 <h2>MorganInnit</h2>
-                <p class="title">Owner & Web Designer</p>
+                <p class="title">Owner &amp; Web Designer</p>
                 <p>shawty bae.</p>
                 <p>
-                  morgan#1092<br />
-                  UserID:7808790<br />21935689799
+                  morgan#1092<br>
+                  UserID:7808790<br>21935689799
                 </p>
                 <p>
-                  <a href="http://dsc.bio/morganoutit" target="_blank"
-                    ><button class="button">Contact</button></a
-                  >
+                  <a href="http://dsc.bio/morganoutit" target="_blank"><button class="button">Contact</button></a>
                 </p>
               </div>
             </div>
@@ -101,19 +116,17 @@
 
           <div class="column">
             <div class="card">
-              <img src="thonk.jpeg" alt="ThonkPT" style="width: 100%" />
+              <img src="thonk.jpeg" alt="ThonkPT" style="width: 100%">
               <div class="container">
                 <h2>ThonkPT</h2>
                 <p class="title">Co-Dev</p>
                 <p>kewl gamer.</p>
                 <p>
-                  ThonkPT#3766<br />
-                  UserID:7102202<br />84531310734
+                  ThonkPT#3766<br>
+                  UserID:7102202<br>84531310734
                 </p>
                 <p>
-                  <a href="http://dsc.bio/thonkpt2" target="_blank"
-                    ><button class="button">Contact</button></a
-                  >
+                  <a href="http://dsc.bio/thonkpt2" target="_blank"><button class="button">Contact</button></a>
                 </p>
               </div>
             </div>
@@ -125,7 +138,9 @@
     </div>
     <!--end of wrapper-->
 	  <script src="javascript.js"></script>
-  </body>
-</html>
+    <main class="main"></main>
+    <div id="tsparticles"></div>
+    <script src="tsparticles.min.js"></script>
+  
 
-<!-- Made by morgan (with help from jayitrust) -->
+</body></html>
