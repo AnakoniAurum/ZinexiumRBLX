@@ -1,149 +1,125 @@
-@import url(https://fonts.googleapis.com/css?family=Gilda+Display);
+@import 'https://fonts.googleapis.com/css?family=Inconsolata';
 
 html {
-  background: radial-gradient(#000, #111);
-  color: white;
-  overflow: hidden;
-  height: 100%;
-  user-select: none;
+  min-height: 100%;
 }
 
-.static {
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #000000;
+  background-image: radial-gradient(#11581E, #041607), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Inconsolata', Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: rgba(128, 255, 128, 0.8);
+  text-shadow:
+      0 0 1ex rgba(51, 255, 51, 1),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.noise {
+  pointer-events: none;
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  top: -100px;
-  opacity: 0.05;
-  z-index: 230;
-  user-select: none;
-  user-drag: none;
+  background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: .02;
 }
 
-.error {
-  text-align: center;
-  font-family: 'Gilda Display', serif;
-  font-size: 95px;
-  font-style: italic;
-  text-align: center;
-  width: 100px;
-  height: 60px;
-  line-height: 60px;
-  margin: auto;
+.overlay {
+  pointer-events: none;
   position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+      repeating-linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  background-size: auto 4px;
+  z-index: 1;
+}
+
+.overlay::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  display: block;
   top: 0;
-  bottom: 0;
-  left: -60px;
+  left: 0;
   right: 0;
-  animation: noise 2s linear infinite;
-  overflow: default;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      0deg,
+      transparent 0%,
+      rgba(32, 128, 32, 0.2) 2%,
+      rgba(32, 128, 32, 0.8) 3%,
+      rgba(32, 128, 32, 0.2) 3%,
+      transparent 100%);
+  background-repeat: no-repeat;
+  animation: scan 7.5s linear 0s infinite;
 }
 
-
-
-.buttons-con .action-link-wrap {
-  margin-top: 40px;
+@keyframes scan {
+  0%        { background-position: 0 -100vh; }
+  35%, 100% { background-position: 0 100vh; }
 }
-.buttons-con .action-link-wrap a {
-  background: #68c950;
-  padding: 8px 25px;
-  border-radius: 4px;
-  color: #FFF;
-  font-weight: bold;
-  font-size: 14px;
-  transition: all 0.3s linear;
-  cursor: pointer;
-  text-decoration: none;
-  margin-right: 10px
+
+.terminal {
+  box-sizing: inherit;
+  position: absolute;
+  height: 100%;
+  width: 1000px;
+  max-width: 100%;
+  padding: 4rem;
+  text-transform: uppercase;
 }
-.buttons-con .action-link-wrap a:hover {
-  background: #5A5C6C;
+
+.output {
+  color: rgba(128, 255, 128, 0.8);
+  text-shadow:
+      0 0 1px rgba(51, 255, 51, 0.4),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.output::before {
+  content: "> ";
+}
+
+/*
+.input {
+  color: rgba(192, 255, 192, 0.8);
+  text-shadow:
+      0 0 1px rgba(51, 255, 51, 0.4),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.input::before {
+  content: "$ ";
+}
+*/
+
+a {
   color: #fff;
+  text-decoration: none;
 }
 
-.error:after {
-  content: '404';
-  font-family: 'Gilda Display', serif;
-  font-size: 100px;
-  font-style: italic;
-  text-align: center;
-  width: 150px;
-  height: 60px;
-  line-height: 60px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  color: blue;
-  animation: noise-1 .2s linear infinite;
+a::before {
+  content: "[";
 }
 
-.info {
-  text-align: center;
-  font-family: 'Gilda Display', serif;
-  font-size: 15px;
-  font-style: italic;
-  text-align: center;
-  width: 200px;
-  height: 60px;
-  line-height: 60px;
-  margin: auto;
-  position: absolute;
-  top: 140px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  animation: noise-3 1s linear infinite;
+a::after {
+  content: "]";
 }
 
-.error:before {
-  content: '404';
-  font-family: 'Gilda Display', serif;
-  font-size: 100px;
-  font-style: italic;
-  text-align: center;
-  width: 100px;
-  height: 60px;
-  line-height: 60px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  color: red;
-  animation: noise-2 .2s linear infinite;
-}
-
-@keyframes noise-1 {
-  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
-  10% {opacity: .1;}
-  50% {opacity: .5; left: -6px;}
-  80% {opacity: .3;}
-  100% {opacity: .6; left: 2px;}
-}
-
-@keyframes noise-2 {
-  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
-  10% {opacity: .1;}
-  50% {opacity: .5; left: 6px;}
-  80% {opacity: .3;}
-  100% {opacity: .6; left: -2px;}
-}
-
-@keyframes noise {
-  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}  
-  4.3% {opacity: 1; transform: scaleY(1.7);}
-  43% {opacity: 1; transform: scaleX(1.5);}
-}
-
-@keyframes noise-3 {
-  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
-  4.3% {opacity: 1; transform: scaleY(4);}
-  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
+.errorcode {
+  color: white;
 }
