@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<link href="404.css" rel="stylesheet" type="text/css">
-<meta name="description" content="404 Page of Zinexium." />
-    	<title>Page not found</title>
-
-
-
-</head>
-<body>
-<div class="error">404</div>
-<br /><br />
-<span class="info">The page you are looking for does not exist</span>
-<div class="buttons-con">
-    <div class="action-link-wrap">
-      <a onclick="history.back(-1)" class="link-button link-back-button">Go Back</a>
-      <a href="index.html" class="link-button">Go Home</a>
-    </div>
-  </div>
+<div class="noise"></div>
+<div class="overlay"></div>
+<div class="terminal">
+  <h1>Error <span class="errorcode">404</span></h1>
+  <p class="output">The page you are looking for does not exist.</p>
+  <p class="output">Please try to <a onclick="goBack()" href="">go back</a> or <a href="/ZinexiumRBLX/home.html">Go home</a>.</p>
+    <script>
+function goBack() {
+  window.history.back();
+}
+</script>
+    <p class="output">Made by <a href="https://github.com/robinselmer" target="_blank">Robin Selmer</a>, not <a href="https://github.com/ykmmorgan" target="_blank">morgan</a>
 </div>
-<img src="http://images2.layoutsparks.com/1/160030/too-much-tv-static.gif" class="static" />
-</body>
-</html>
