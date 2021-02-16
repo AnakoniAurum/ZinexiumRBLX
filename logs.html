@@ -102,15 +102,21 @@
       </nav>
     </aside>
     <main class="main"></main>
-    - var label = 'cryptaris';
-a.glitch-btn(href='http://cryptarismission.com' target='_blank')
-  
-  .label= label
-  
-  for i in [1, 2, 3, 4, 5]
-    .mask
-      span= label
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-sprite">
+    <defs>
+        <filter id="filter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.000001 0.000001" numOctaves="1" result="warp" seed="1"></feTurbulence>
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp"></feDisplacementMap>
+        </filter>
+    </defs>
+</svg>
+<div class="body-section">
+  <div class="half">
+      <div class="btn btn-small btn-dark btn-glitch">Bitch'n</div>
+  </div>
+</div>
     <div id="tsparticles"></div>
     <script src="tsparticles.min.js"></script>
   </body>
