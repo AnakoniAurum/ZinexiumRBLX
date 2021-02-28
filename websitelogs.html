@@ -26,6 +26,19 @@
     />
     <title>Zinexium</title>
     <style>
+      .container { 
+  height: 300px;
+  position: relative;
+        }
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
       ul {
         list-style-type: none;
         margin: 0;
@@ -102,12 +115,13 @@
     </aside>
     <main class="main"></main>
     
+    <container class="center">
     <h1>Website Logs</h1>
-<textarea rows="4" cols="50" readonly>
-[-] Added Website Logs
+<textarea rows="4" cols="50" readonly="">[-] Added Website Logs
 [-] Updated Anakoni and ThonkPT's discord info.
 
 </textarea>
+      </container>
     
     <div id="tsparticles"></div>
     <script src="tsparticles.min.js"></script>
