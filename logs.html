@@ -27,6 +27,19 @@
     />
     <title>Zinexium</title>
     <style>
+         .container { 
+  height: 900px;
+  position: relative; 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
       .btn {
   background-color: Black;
   border: none;
@@ -40,6 +53,7 @@
 .btn:hover {
   background-color: DimGrey;
 }
+      ul {
       ul {
         list-style-type: none;
         margin: 0;
@@ -116,9 +130,12 @@
     </aside>
     <main class="main"></main>
     
-    <button class="btn"><i class="fa fa-terminal"></i>    Executor Logs</button>
-    <button class="btn"><i class="fa fa--window-maximize"></i>    Website Logs</button>
-
+   <div class="container">
+  <div class="center">
+    <button class="btn" href="" target="_blank"><i class="fa fa-terminal"></i>    Executor Logs</button>
+    <button class="btn" href="" target="_blank"><i class="fa fa-window-maximize"></i>    Website Logs</button>
+          </div>
+      </div>
  
     <div id="tsparticles"></div>
     <script src="tsparticles.min.js"></script>
