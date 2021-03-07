@@ -177,16 +177,9 @@ textarea {
     margin: 0px 8px;
 }
 
-h2.description {
-  text-align: center;
-  width: 89%;
-  margin-left: 8%;
-  height:473px;
-  }
-
   h2.description { 
-  font-size: 14px;
-  width: 409px; 
+  font-size: 25px;
+  width: 689px; 
 }
 @media (max-width: 480px) {
   h2.description {
@@ -195,4 +188,19 @@ h2.description {
     height: 590px; !important;
     
   }
+}
+
+.container {
+  ...
+  position: relative;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -345px 0 0 -299px; /* apply negative top and left margins to truly center the element */
 }
