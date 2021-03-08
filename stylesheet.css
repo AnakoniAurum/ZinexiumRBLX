@@ -202,5 +202,5 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -345px 0 0 -299px; /* apply negative top and left margins to truly center the element */
+  margin: -345px 0 0 -317px; /* apply negative top and left margins to truly center the element */
 }
